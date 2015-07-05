@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCAF96A61A318CAC006CD271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96A51A318CAC006CD271 /* Foundation.framework */; };
+		CCAF96A81A318CAC006CD271 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96A71A318CAC006CD271 /* CoreGraphics.framework */; };
+		CCAF96AA1A318CAC006CD271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96A91A318CAC006CD271 /* UIKit.framework */; };
+		CCAF96B01A318CAC006CD271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCAF96AE1A318CAC006CD271 /* InfoPlist.strings */; };
+		CCAF96B21A318CAC006CD271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF96B11A318CAC006CD271 /* main.m */; };
+		CCAF96B61A318CAC006CD271 /* QYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF96B51A318CAC006CD271 /* QYAppDelegate.m */; };
+		CCAF96B91A318CAC006CD271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAF96B71A318CAC006CD271 /* Main.storyboard */; };
+		CCAF96BC1A318CAC006CD271 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF96BB1A318CAC006CD271 /* QYViewController.m */; };
+		CCAF96BE1A318CAC006CD271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAF96BD1A318CAC006CD271 /* Images.xcassets */; };
+		CCAF96C51A318CAC006CD271 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96C41A318CAC006CD271 /* XCTest.framework */; };
+		CCAF96C61A318CAC006CD271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96A51A318CAC006CD271 /* Foundation.framework */; };
+		CCAF96C71A318CAC006CD271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAF96A91A318CAC006CD271 /* UIKit.framework */; };
+		CCAF96CF1A318CAC006CD271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCAF96CD1A318CAC006CD271 /* InfoPlist.strings */; };
+		CCAF96D11A318CAC006CD271 /* FMDBDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF96D01A318CAC006CD271 /* FMDBDemoTests.m */; };
+		CCC4E9A91A318DCC00516B0B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9971A318DCC00516B0B /* AFHTTPRequestOperation.m */; };
+		CCC4E9AA1A318DCC00516B0B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9991A318DCC00516B0B /* AFHTTPRequestOperationManager.m */; };
+		CCC4E9AB1A318DCC00516B0B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E99B1A318DCC00516B0B /* AFHTTPSessionManager.m */; };
+		CCC4E9AC1A318DCC00516B0B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E99E1A318DCC00516B0B /* AFNetworkReachabilityManager.m */; };
+		CCC4E9AD1A318DCC00516B0B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9A01A318DCC00516B0B /* AFSecurityPolicy.m */; };
+		CCC4E9AE1A318DCC00516B0B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9A21A318DCC00516B0B /* AFURLConnectionOperation.m */; };
+		CCC4E9AF1A318DCC00516B0B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9A41A318DCC00516B0B /* AFURLRequestSerialization.m */; };
+		CCC4E9B01A318DCC00516B0B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9A61A318DCC00516B0B /* AFURLResponseSerialization.m */; };
+		CCC4E9B11A318DCC00516B0B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9A81A318DCC00516B0B /* AFURLSessionManager.m */; };
+		CCC4E9BE1A318DDD00516B0B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9B41A318DDD00516B0B /* FMDatabase.m */; };
+		CCC4E9BF1A318DDD00516B0B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9B61A318DDD00516B0B /* FMDatabaseAdditions.m */; };
+		CCC4E9C01A318DDD00516B0B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9B81A318DDD00516B0B /* FMDatabasePool.m */; };
+		CCC4E9C11A318DDD00516B0B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9BA1A318DDD00516B0B /* FMDatabaseQueue.m */; };
+		CCC4E9C21A318DDD00516B0B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9BD1A318DDD00516B0B /* FMResultSet.m */; };
+		CCC4E9C51A318E1B00516B0B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4E9C41A318E1B00516B0B /* libsqlite3.0.dylib */; };
+		CCC4E9CC1A31901000516B0B /* QYStuListsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9CB1A31901000516B0B /* QYStuListsVC.m */; };
+		CCC4E9CF1A31902000516B0B /* QYStuDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9CE1A31902000516B0B /* QYStuDetailVC.m */; };
+		CCC4E9D41A31911B00516B0B /* QYStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4E9D31A31911B00516B0B /* QYStudentModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCAF96C81A318CAC006CD271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCAF969A1A318CAC006CD271 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCAF96A11A318CAC006CD271;
+			remoteInfo = FMDBDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCAF96A21A318CAC006CD271 /* FMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAF96A51A318CAC006CD271 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCAF96A71A318CAC006CD271 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCAF96A91A318CAC006CD271 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCAF96AD1A318CAC006CD271 /* FMDBDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDBDemo-Info.plist"; sourceTree = "<group>"; };
+		CCAF96AF1A318CAC006CD271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCAF96B11A318CAC006CD271 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCAF96B31A318CAC006CD271 /* FMDBDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDBDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CCAF96B41A318CAC006CD271 /* QYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYAppDelegate.h; sourceTree = "<group>"; };
+		CCAF96B51A318CAC006CD271 /* QYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYAppDelegate.m; sourceTree = "<group>"; };
+		CCAF96B81A318CAC006CD271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCAF96BA1A318CAC006CD271 /* QYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYViewController.h; sourceTree = "<group>"; };
+		CCAF96BB1A318CAC006CD271 /* QYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYViewController.m; sourceTree = "<group>"; };
+		CCAF96BD1A318CAC006CD271 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCAF96C31A318CAC006CD271 /* FMDBDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAF96C41A318CAC006CD271 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CCAF96CC1A318CAC006CD271 /* FMDBDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMDBDemoTests-Info.plist"; sourceTree = "<group>"; };
+		CCAF96CE1A318CAC006CD271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCAF96D01A318CAC006CD271 /* FMDBDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBDemoTests.m; sourceTree = "<group>"; };
+		CCC4E9941A318DA500516B0B /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		CCC4E9961A318DCC00516B0B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CCC4E9971A318DCC00516B0B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CCC4E9981A318DCC00516B0B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CCC4E9991A318DCC00516B0B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CCC4E99A1A318DCC00516B0B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CCC4E99B1A318DCC00516B0B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CCC4E99C1A318DCC00516B0B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CCC4E99D1A318DCC00516B0B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CCC4E99E1A318DCC00516B0B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CCC4E99F1A318DCC00516B0B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CCC4E9A01A318DCC00516B0B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CCC4E9A11A318DCC00516B0B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CCC4E9A21A318DCC00516B0B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		CCC4E9A31A318DCC00516B0B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CCC4E9A41A318DCC00516B0B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CCC4E9A51A318DCC00516B0B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CCC4E9A61A318DCC00516B0B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CCC4E9A71A318DCC00516B0B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CCC4E9A81A318DCC00516B0B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CCC4E9B31A318DDD00516B0B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CCC4E9B41A318DDD00516B0B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CCC4E9B51A318DDD00516B0B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CCC4E9B61A318DDD00516B0B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CCC4E9B71A318DDD00516B0B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CCC4E9B81A318DDD00516B0B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CCC4E9B91A318DDD00516B0B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CCC4E9BA1A318DDD00516B0B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CCC4E9BB1A318DDD00516B0B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		CCC4E9BC1A318DDD00516B0B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CCC4E9BD1A318DDD00516B0B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CCC4E9C41A318E1B00516B0B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		CCC4E9CA1A31901000516B0B /* QYStuListsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYStuListsVC.h; sourceTree = "<group>"; };
+		CCC4E9CB1A31901000516B0B /* QYStuListsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYStuListsVC.m; sourceTree = "<group>"; };
+		CCC4E9CD1A31902000516B0B /* QYStuDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYStuDetailVC.h; sourceTree = "<group>"; };
+		CCC4E9CE1A31902000516B0B /* QYStuDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYStuDetailVC.m; sourceTree = "<group>"; };
+		CCC4E9D21A31911B00516B0B /* QYStudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYStudentModel.h; sourceTree = "<group>"; };
+		CCC4E9D31A31911B00516B0B /* QYStudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYStudentModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCAF969F1A318CAC006CD271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC4E9C51A318E1B00516B0B /* libsqlite3.0.dylib in Frameworks */,
+				CCAF96A81A318CAC006CD271 /* CoreGraphics.framework in Frameworks */,
+				CCAF96AA1A318CAC006CD271 /* UIKit.framework in Frameworks */,
+				CCAF96A61A318CAC006CD271 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAF96C01A318CAC006CD271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAF96C51A318CAC006CD271 /* XCTest.framework in Frameworks */,
+				CCAF96C71A318CAC006CD271 /* UIKit.framework in Frameworks */,
+				CCAF96C61A318CAC006CD271 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCAF96991A318CAC006CD271 = {
+			isa = PBXGroup;
+			children = (
+				CCAF96AB1A318CAC006CD271 /* FMDBDemo */,
+				CCAF96CA1A318CAC006CD271 /* FMDBDemoTests */,
+				CCAF96A41A318CAC006CD271 /* Frameworks */,
+				CCAF96A31A318CAC006CD271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCAF96A31A318CAC006CD271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF96A21A318CAC006CD271 /* FMDBDemo.app */,
+				CCAF96C31A318CAC006CD271 /* FMDBDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAF96A41A318CAC006CD271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9C41A318E1B00516B0B /* libsqlite3.0.dylib */,
+				CCAF96A51A318CAC006CD271 /* Foundation.framework */,
+				CCAF96A71A318CAC006CD271 /* CoreGraphics.framework */,
+				CCAF96A91A318CAC006CD271 /* UIKit.framework */,
+				CCAF96C41A318CAC006CD271 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCAF96AB1A318CAC006CD271 /* FMDBDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9931A318D7E00516B0B /* Utilities */,
+				CCC4E9921A318D6F00516B0B /* OpenSources */,
+				CCAF96B71A318CAC006CD271 /* Main.storyboard */,
+				CCC4E9D01A3190C200516B0B /* ViewControllers */,
+				CCC4E9D11A3190E600516B0B /* Models */,
+				CCAF96BD1A318CAC006CD271 /* Images.xcassets */,
+				CCAF96AC1A318CAC006CD271 /* Supporting Files */,
+			);
+			path = FMDBDemo;
+			sourceTree = "<group>";
+		};
+		CCAF96AC1A318CAC006CD271 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF96B41A318CAC006CD271 /* QYAppDelegate.h */,
+				CCAF96B51A318CAC006CD271 /* QYAppDelegate.m */,
+				CCAF96AD1A318CAC006CD271 /* FMDBDemo-Info.plist */,
+				CCAF96AE1A318CAC006CD271 /* InfoPlist.strings */,
+				CCAF96B11A318CAC006CD271 /* main.m */,
+				CCAF96B31A318CAC006CD271 /* FMDBDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCAF96CA1A318CAC006CD271 /* FMDBDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF96D01A318CAC006CD271 /* FMDBDemoTests.m */,
+				CCAF96CB1A318CAC006CD271 /* Supporting Files */,
+			);
+			path = FMDBDemoTests;
+			sourceTree = "<group>";
+		};
+		CCAF96CB1A318CAC006CD271 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF96CC1A318CAC006CD271 /* FMDBDemoTests-Info.plist */,
+				CCAF96CD1A318CAC006CD271 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCC4E9921A318D6F00516B0B /* OpenSources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9B21A318DDD00516B0B /* fmdb */,
+				CCC4E9951A318DCC00516B0B /* AFNetworking */,
+			);
+			name = OpenSources;
+			sourceTree = "<group>";
+		};
+		CCC4E9931A318D7E00516B0B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9941A318DA500516B0B /* common.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CCC4E9951A318DCC00516B0B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9961A318DCC00516B0B /* AFHTTPRequestOperation.h */,
+				CCC4E9971A318DCC00516B0B /* AFHTTPRequestOperation.m */,
+				CCC4E9981A318DCC00516B0B /* AFHTTPRequestOperationManager.h */,
+				CCC4E9991A318DCC00516B0B /* AFHTTPRequestOperationManager.m */,
+				CCC4E99A1A318DCC00516B0B /* AFHTTPSessionManager.h */,
+				CCC4E99B1A318DCC00516B0B /* AFHTTPSessionManager.m */,
+				CCC4E99C1A318DCC00516B0B /* AFNetworking.h */,
+				CCC4E99D1A318DCC00516B0B /* AFNetworkReachabilityManager.h */,
+				CCC4E99E1A318DCC00516B0B /* AFNetworkReachabilityManager.m */,
+				CCC4E99F1A318DCC00516B0B /* AFSecurityPolicy.h */,
+				CCC4E9A01A318DCC00516B0B /* AFSecurityPolicy.m */,
+				CCC4E9A11A318DCC00516B0B /* AFURLConnectionOperation.h */,
+				CCC4E9A21A318DCC00516B0B /* AFURLConnectionOperation.m */,
+				CCC4E9A31A318DCC00516B0B /* AFURLRequestSerialization.h */,
+				CCC4E9A41A318DCC00516B0B /* AFURLRequestSerialization.m */,
+				CCC4E9A51A318DCC00516B0B /* AFURLResponseSerialization.h */,
+				CCC4E9A61A318DCC00516B0B /* AFURLResponseSerialization.m */,
+				CCC4E9A71A318DCC00516B0B /* AFURLSessionManager.h */,
+				CCC4E9A81A318DCC00516B0B /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CCC4E9B21A318DDD00516B0B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9B31A318DDD00516B0B /* FMDatabase.h */,
+				CCC4E9B41A318DDD00516B0B /* FMDatabase.m */,
+				CCC4E9B51A318DDD00516B0B /* FMDatabaseAdditions.h */,
+				CCC4E9B61A318DDD00516B0B /* FMDatabaseAdditions.m */,
+				CCC4E9B71A318DDD00516B0B /* FMDatabasePool.h */,
+				CCC4E9B81A318DDD00516B0B /* FMDatabasePool.m */,
+				CCC4E9B91A318DDD00516B0B /* FMDatabaseQueue.h */,
+				CCC4E9BA1A318DDD00516B0B /* FMDatabaseQueue.m */,
+				CCC4E9BB1A318DDD00516B0B /* FMDB.h */,
+				CCC4E9BC1A318DDD00516B0B /* FMResultSet.h */,
+				CCC4E9BD1A318DDD00516B0B /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		CCC4E9D01A3190C200516B0B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF96BA1A318CAC006CD271 /* QYViewController.h */,
+				CCAF96BB1A318CAC006CD271 /* QYViewController.m */,
+				CCC4E9CA1A31901000516B0B /* QYStuListsVC.h */,
+				CCC4E9CB1A31901000516B0B /* QYStuListsVC.m */,
+				CCC4E9CD1A31902000516B0B /* QYStuDetailVC.h */,
+				CCC4E9CE1A31902000516B0B /* QYStuDetailVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCC4E9D11A3190E600516B0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4E9D21A31911B00516B0B /* QYStudentModel.h */,
+				CCC4E9D31A31911B00516B0B /* QYStudentModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCAF96A11A318CAC006CD271 /* FMDBDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAF96D41A318CAC006CD271 /* Build configuration list for PBXNativeTarget "FMDBDemo" */;
+			buildPhases = (
+				CCAF969E1A318CAC006CD271 /* Sources */,
+				CCAF969F1A318CAC006CD271 /* Frameworks */,
+				CCAF96A01A318CAC006CD271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDBDemo;
+			productName = FMDBDemo;
+			productReference = CCAF96A21A318CAC006CD271 /* FMDBDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCAF96C21A318CAC006CD271 /* FMDBDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAF96D71A318CAC006CD271 /* Build configuration list for PBXNativeTarget "FMDBDemoTests" */;
+			buildPhases = (
+				CCAF96BF1A318CAC006CD271 /* Sources */,
+				CCAF96C01A318CAC006CD271 /* Frameworks */,
+				CCAF96C11A318CAC006CD271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCAF96C91A318CAC006CD271 /* PBXTargetDependency */,
+			);
+			name = FMDBDemoTests;
+			productName = FMDBDemoTests;
+			productReference = CCAF96C31A318CAC006CD271 /* FMDBDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCAF969A1A318CAC006CD271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hnqingyun;
+				TargetAttributes = {
+					CCAF96C21A318CAC006CD271 = {
+						TestTargetID = CCAF96A11A318CAC006CD271;
+					};
+				};
+			};
+			buildConfigurationList = CCAF969D1A318CAC006CD271 /* Build configuration list for PBXProject "FMDBDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCAF96991A318CAC006CD271;
+			productRefGroup = CCAF96A31A318CAC006CD271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCAF96A11A318CAC006CD271 /* FMDBDemo */,
+				CCAF96C21A318CAC006CD271 /* FMDBDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCAF96A01A318CAC006CD271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAF96BE1A318CAC006CD271 /* Images.xcassets in Resources */,
+				CCAF96B01A318CAC006CD271 /* InfoPlist.strings in Resources */,
+				CCAF96B91A318CAC006CD271 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAF96C11A318CAC006CD271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAF96CF1A318CAC006CD271 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCAF969E1A318CAC006CD271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC4E9A91A318DCC00516B0B /* AFHTTPRequestOperation.m in Sources */,
+				CCC4E9CC1A31901000516B0B /* QYStuListsVC.m in Sources */,
+				CCAF96B61A318CAC006CD271 /* QYAppDelegate.m in Sources */,
+				CCC4E9BE1A318DDD00516B0B /* FMDatabase.m in Sources */,
+				CCC4E9AA1A318DCC00516B0B /* AFHTTPRequestOperationManager.m in Sources */,
+				CCC4E9AC1A318DCC00516B0B /* AFNetworkReachabilityManager.m in Sources */,
+				CCC4E9CF1A31902000516B0B /* QYStuDetailVC.m in Sources */,
+				CCC4E9BF1A318DDD00516B0B /* FMDatabaseAdditions.m in Sources */,
+				CCC4E9B01A318DCC00516B0B /* AFURLResponseSerialization.m in Sources */,
+				CCC4E9D41A31911B00516B0B /* QYStudentModel.m in Sources */,
+				CCC4E9C01A318DDD00516B0B /* FMDatabasePool.m in Sources */,
+				CCC4E9AE1A318DCC00516B0B /* AFURLConnectionOperation.m in Sources */,
+				CCC4E9C11A318DDD00516B0B /* FMDatabaseQueue.m in Sources */,
+				CCC4E9AD1A318DCC00516B0B /* AFSecurityPolicy.m in Sources */,
+				CCC4E9AB1A318DCC00516B0B /* AFHTTPSessionManager.m in Sources */,
+				CCC4E9AF1A318DCC00516B0B /* AFURLRequestSerialization.m in Sources */,
+				CCC4E9C21A318DDD00516B0B /* FMResultSet.m in Sources */,
+				CCC4E9B11A318DCC00516B0B /* AFURLSessionManager.m in Sources */,
+				CCAF96B21A318CAC006CD271 /* main.m in Sources */,
+				CCAF96BC1A318CAC006CD271 /* QYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAF96BF1A318CAC006CD271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAF96D11A318CAC006CD271 /* FMDBDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCAF96C91A318CAC006CD271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCAF96A11A318CAC006CD271 /* FMDBDemo */;
+			targetProxy = CCAF96C81A318CAC006CD271 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCAF96AE1A318CAC006CD271 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAF96AF1A318CAC006CD271 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCAF96B71A318CAC006CD271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAF96B81A318CAC006CD271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCAF96CD1A318CAC006CD271 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAF96CE1A318CAC006CD271 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCAF96D21A318CAC006CD271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCAF96D31A318CAC006CD271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCAF96D51A318CAC006CD271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMDBDemo/FMDBDemo-Prefix.pch";
+				INFOPLIST_FILE = "FMDBDemo/FMDBDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCAF96D61A318CAC006CD271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMDBDemo/FMDBDemo-Prefix.pch";
+				INFOPLIST_FILE = "FMDBDemo/FMDBDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCAF96D81A318CAC006CD271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FMDBDemo.app/FMDBDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMDBDemo/FMDBDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FMDBDemoTests/FMDBDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CCAF96D91A318CAC006CD271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FMDBDemo.app/FMDBDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMDBDemo/FMDBDemo-Prefix.pch";
+				INFOPLIST_FILE = "FMDBDemoTests/FMDBDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCAF969D1A318CAC006CD271 /* Build configuration list for PBXProject "FMDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAF96D21A318CAC006CD271 /* Debug */,
+				CCAF96D31A318CAC006CD271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAF96D41A318CAC006CD271 /* Build configuration list for PBXNativeTarget "FMDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAF96D51A318CAC006CD271 /* Debug */,
+				CCAF96D61A318CAC006CD271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAF96D71A318CAC006CD271 /* Build configuration list for PBXNativeTarget "FMDBDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAF96D81A318CAC006CD271 /* Debug */,
+				CCAF96D91A318CAC006CD271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCAF969A1A318CAC006CD271 /* Project object */;
+}
